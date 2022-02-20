@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/loginScreenFragment">
+
+    <fragment
+        android:id="@+id/yemeklerFragment"
+        android:name="com.example.wuufood.fragments.YemeklerFragment"
+        android:label="fragment_yemekler"
+        tools:layout="@layout/fragment_yemekler" >
+        <action
+            android:id="@+id/action_yemeklerFragment_to_yemeklerDetayFragment"
+            app:destination="@id/yemeklerDetayFragment" />
+        <action
+            android:id="@+id/action_yemeklerFragment_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment" />
+        <action
+            android:id="@+id/yemeklerdenProfile"
+            app:destination="@id/profilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yemeklerDetayFragment"
+        android:name="com.example.wuufood.fragments.YemeklerDetayFragment"
+        android:label="YemeklerDetayFragment"
+        tools:layout="@layout/fragment_yemekler_detay">
+        <argument
+            android:name="yemekArg"
+            app:argType="com.example.wuufood.model.Yemekler" />
+        <action
+            android:id="@+id/action_yemeklerDetayFragment_to_sepetFragment"
+            app:destination="@id/sepetFragment" />
+        <action
+            android:id="@+id/action_yemeklerDetayFragment_to_yemeklerFragment"
+            app:destination="@id/yemeklerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sepetFragment"
+        android:name="com.example.wuufood.fragments.SepetFragment"
+        android:label="SepetFragment"
+        tools:layout="@layout/fragment_sepet">
+        <action
+            android:id="@+id/sepetFragmenttoYemeklerFragment"
+            app:destination="@id/yemeklerFragment" />
+        <action
+            android:id="@+id/sepettenSiparisEkranina"
+            app:destination="@id/siparisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreenFragment"
+        android:name="com.example.wuufood.fragments.LoginScreenFragment"
+        android:label="LoginScreenFragment"
+        tools:layout="@layout/fragment_login_screen"
+        >
+        <action
+            android:id="@+id/giristenKayita"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/giristenAnasayfa"
+            app:destination="@id/yemeklerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.wuufood.fragments.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/kayittanGirise"
+            app:destination="@id/loginScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.wuufood.fragments.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/profildenLogine"
+            app:destination="@id/loginScreenFragment" />
+        <action
+            android:id="@+id/profildenYemeklere"
+            app:destination="@id/yemeklerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/siparisFragment"
+        android:name="com.example.wuufood.fragments.SiparisFragment"
+        android:label="fragment_siparis"
+        tools:layout="@layout/fragment_siparis" >
+        <action
+            android:id="@+id/siparistenYemeklere"
+            app:destination="@id/yemeklerFragment" />
+    </fragment>
+</navigation>

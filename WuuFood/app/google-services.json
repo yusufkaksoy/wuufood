@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "531847983299",
+    "project_id": "wuufood",
+    "storage_bucket": "wuufood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531847983299:android:6c0571ccffd3e4e07fb276",
+        "android_client_info": {
+          "package_name": "com.example.wuufood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531847983299-qcs9ltrlqfasgdcu4l34tsj7gdl6an55.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wuufood",
+            "certificate_hash": "f2d8234ac318301cbcef78ed800f6eb780bafbc7"
+          }
+        },
+        {
+          "client_id": "531847983299-er5m50jtih0g9c3rb2r2bq8v7lcj6k6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPYaI08U1Q05kPcuNkz7wSOH1bzkOxwfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531847983299-er5m50jtih0g9c3rb2r2bq8v7lcj6k6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
