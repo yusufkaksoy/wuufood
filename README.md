@@ -16,5 +16,5 @@ Screenshots
 <img src="https://user-images.githubusercontent.com/56016998/154848553-0e9ce710-3f30-4cf6-bdd6-962447ceadbc.png" width="250" title="siparis">
  </p>
 
-
+.
 
