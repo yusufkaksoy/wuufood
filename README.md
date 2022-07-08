@@ -1,6 +1,5 @@
 
 # Techs
-* Rick and Morty API 
 * Kotlin , Coroutines
 * LiveData
 * Retrofit
