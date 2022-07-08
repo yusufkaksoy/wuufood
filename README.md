@@ -1,4 +1,15 @@
 
+# Techs
+* Rick and Morty API 
+* Kotlin , Coroutines
+* LiveData
+* Retrofit
+* MVVM Architecture
+* Room - For offline storage
+* Navigation Component
+* View Binding
+* Data Binding
+
 Screenshots
 <p align="center">
 <img src="https://user-images.githubusercontent.com/56016998/154848378-4d0f20ae-56e0-4ea8-9897-8a5675eaff37.png" width="250" title="girisekran">
